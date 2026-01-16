@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "dbadmin";
-$password = "Strong@@password123";
-$dbname = "gpsdata_database";
+$user = "u896721558_alarmas";
+$password = "petec0Cara";
+$dbname = "u896721558_alarmas";
 header("Access-Control-Allow-Origin: *");
 
 
