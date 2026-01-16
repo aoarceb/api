@@ -10,7 +10,7 @@ PIN = 10  # GPIO
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(PIN, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
-client = mqtt.Client()
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 client.connect(BROKER, 1883, 60)
 
 estado_anterior = None
