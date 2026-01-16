@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "u896721558_alarmas";
-$password = "petec0Cara";
-$dbname = "u896721558_alarmas";
+$user = "####";
+$password = "#####";
+$dbname = "###";
 header("Access-Control-Allow-Origin: *");
 
 
