@@ -7,7 +7,7 @@ MQTT_BROKER = "localhost"
 MQTT_PORT = 1883
 MQTT_TOPIC = "alarmas/carce/+/+/+"
 
-API_URL = "http://localhost/api_save_alarm.php"
+API_URL = "http://localhost/apiGuardaAlarma.php"
 #API_KEY = "MI_CLAVE_SECRETA"
 
 def on_connect(client, userdata, flags, rc):
@@ -27,8 +27,8 @@ def on_message(client, userdata, msg):
 
         data = {
             "usuario": usuario,
-            "dispositivo": dispositivo,
-            "ubicacion": ubicacion,
+            "nombre_alarma": dispositivo,
+            "ubicacion_alarma": ubicacion,
             "tipo": tipo,
             "fecha_evento": datetime.now().isoformat()
         }
