@@ -1,3 +1,4 @@
+##Se suscribe a topico de alarma y envia los datos a la API para ser grabados en la BD
 import json
 import requests
 import paho.mqtt.client as mqtt
@@ -7,7 +8,7 @@ MQTT_BROKER = "localhost"
 MQTT_PORT = 1883
 MQTT_TOPIC = "alarmas/carce/+/+/+"
 
-API_URL = "http://localhost/apiGuardaAlarma.php"
+API_URL = "https://alarmas.sumifastoffice.com/apiGuardaAlarma.php"
 #API_KEY = "MI_CLAVE_SECRETA"
 
 def on_connect(client, userdata, flags, rc):
